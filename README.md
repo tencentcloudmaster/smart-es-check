@@ -9,6 +9,13 @@
 # sh es-check.sh
 ```
 
+### 注意事项
+
+1. 脚本请在linux环境下运行，确保这个linux网络能跟es集群的网络互通
+2. 执行脚本建议使用超级用户elastic
+3. 默认请求9200端口，若您的集群不是9200端口，请尝试把所有端口替换成您的端口
+
+
 ## 效果展示
 ```
 [root@es_kibana_logstash /tmp]# sh es-check.sh 
@@ -107,8 +114,4 @@ alias                        index                filter routing.index routing.s
 
 ```
 
-### 注意事项
 
-1. 脚本请在linux环境下运行，确保这个linux网络能跟es集群的网络互通
-2. 执行脚本建议使用超级用户elastic
-3. 默认请求9200端口，若您的集群不是9200端口，请尝试把所有端口替换成您的端口
